@@ -11,7 +11,8 @@ namespace AddressBook.Controllers
         [HttpGet("/")]
         public ActionResult Index()
         {
-            return View();
+          List<Contact> allContacts = Contact.GetAll();
+          return View(allContacts);
         }
 
         [HttpGet("/Contacts")]

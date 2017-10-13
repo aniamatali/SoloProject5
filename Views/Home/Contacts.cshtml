@@ -3,13 +3,8 @@
 }
 
 <div class="container">
-<h1>Contacts</h1>
-<ul>
-  @foreach (var ContactMod in Model)
-  {
-    <p><a href='/contacts/@ContactMod.GetId()'>Name:@ContactMod.GetName()<br> Address:@ContactMod.GetAddress()<br> Phone#:@ContactMod.GetNumber() </a></p>
-
-  }
-</ul>
+<h1>You've added a contact!</h1>
 <a href='/contacts/new'>Add new Contact.</a>
+<br>
+<a href='/'>View all Contacts</a>
 </div>
