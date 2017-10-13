@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+<h1>Address Book</h1>
+<h3>Add a new Contact:</h3>
+<form action='/Contacts' method='post'>
+  <label for='new-name'>Name: </label>
+  <br>
+  <input id='new-name' name='new-name' type='text'>
+  <br>
+  <label for='new-address'>Address: </label>
+  <br>
+  <input id='new-address' name='new-address' type='text'>
+  <br>
+  <label for='new-number'>Phone Number: </label>
+  <br>
+  <input id='new-number' name='new-number' type='text'>
+  <br>
+  <label for='new-info'>Additional Information: </label>
+  <br>
+
+  <br>
+  <button type='submit'>Add Contact</button>
+</form>
+</div>

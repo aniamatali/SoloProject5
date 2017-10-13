@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+<h1>Contacts</h1>
+<ul>
+  @foreach (var ContactMod in Model)
+  {
+    <p><a href='/contacts/@ContactMod.GetId()'>Name:@ContactMod.GetName()<br> Address:@ContactMod.GetAddress()<br> Phone#:@ContactMod.GetNumber() </a></p>
+
+  }
+</ul>
+<a href='/contacts/new'>Add new Contact.</a>
+</div>

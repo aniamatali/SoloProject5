@@ -28,7 +28,7 @@ namespace AddressBook.Models
       _name = newName;
     }
     //
-    public string getAddress()
+    public string GetAddress()
     {
       return _address;
     }
@@ -37,7 +37,7 @@ namespace AddressBook.Models
       _address = newAddress;
     }
     //
-    public string getNumber()
+    public string GetNumber()
     {
       return _number;
     }
@@ -60,5 +60,9 @@ namespace AddressBook.Models
       return _instances[searchId-1];
     }
     //
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
   }
 }
