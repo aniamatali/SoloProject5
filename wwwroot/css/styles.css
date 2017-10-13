@@ -2,6 +2,7 @@
 body {
   background-color:#464849;
   color:white;
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container-fluid {
@@ -9,6 +10,7 @@ body {
   margin-top:20px;
   background-color:#586477;
   border:1px solid black;
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 button {
@@ -36,4 +38,8 @@ ul {
 
 p {
   color:white;
+}
+
+h1 {
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
