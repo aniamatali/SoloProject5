@@ -1,7 +1,39 @@
+
 body {
-  text-align:center;
-  margin:auto;
-  background-color:#f3f3f3;
+  background-color:#464849;
+  color:white;
+}
 
+.container-fluid {
+  width:500px;
+  margin-top:20px;
+  background-color:#586477;
+  border:1px solid black;
+}
 
+button {
+  color:black;
+}
+
+a {
+  color:white;
+}
+
+a:hover {
+  color:white;
+}
+
+li {
+  list-style: none;
+  color:white;
+}
+
+ul {
+  color:white;
+  margin-left:20px;
+  width:300px;
+}
+
+p {
+  color:white;
 }

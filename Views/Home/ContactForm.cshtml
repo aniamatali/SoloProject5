@@ -1,10 +1,57 @@
+<!DOCTYPE html>
 @{
   Layout = "_Layout";
 }
 
-<div class="container">
+<style>
+
+body {
+background-color:#464849;
+}
+
+.container-fluid {
+  width:500px;
+  margin-top:20px;
+  background-color:#586477;
+  border:1px solid black;
+}
+
+label {
+margin-top:5px;
+color:#e8d176;
+font-size:15px;
+}
+
+p {
+color:white;
+}
+
+a {
+color:white;
+}
+
+h1, h3 {
+color:white;
+}
+
+a:hover {
+  color:white;
+}
+form {
+margin-bottom:0px;
+}
+
+button {
+margin-bottom:10px;
+}
+</style>
+
+
+<div class="container-fluid">
 <h1>Address Book</h1>
 <h3>Add a new Contact:</h3>
+<div class="row">
+<div class="col-md-12">
 <form action='/Contacts' method='post'>
   <label for='new-name'>Name: </label>
   <br>
@@ -18,12 +65,19 @@
   <br>
   <input id='new-number' name='new-number' type='text'>
   <br>
-  <label for='new-info'>Additional Information: </label>
-  <br>
-
   <br>
   <button type='submit'>Add Contact</button>
+</form>
+  <form action="/Contacts/list/clear" method="post">
+    <br>
+    <button type="submit" name="button">Clear All Contacts</button>
+  </form>
+<form action="/" method="get">
+  <button type="submit" name="button">View All Contacts</button>
+</form>
+</div>
 
-  <a href="/">AddressBook</a>
+
+</div>
 </form>
 </div>

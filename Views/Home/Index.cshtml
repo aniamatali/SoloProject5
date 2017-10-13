@@ -3,31 +3,28 @@
   Layout = "_Layout";
 }
 
-<div class="container">
+<div class="container-fluid">
 
-<h1>AddressBook</h1>
+  <h1>AddressBook</h1>
 
-@if (@Model.Count == 0)
-{
-<p>Please enter a contact</p>
-}
-
-<ul>
-  @foreach (var contact in Model)
+  @if (@Model.Count == 0)
   {
-    <li><a href="/contacts/@contact.GetId()">@contact.GetName()</a></li>
+    <p>Click below to enter a new contact.</p>
   }
 
-</ul>
+  <ul>
+    @foreach (var contact in Model)
+    {
+      <li><a href="/contacts/@contact.GetId()">@contact.GetName()</a></li>
+    }
 
-<a href='/contacts/new'>Add a new Contact</a>
+  </ul>
 
-<form action="/Contacts/list/clear" method="post">
-  <br>
-  <button type="submit" name="button">Clear All Contacts</button>
-</form>
+  <a href='/contacts/new'>Add a new Contact</a>
 
-
-
+  <form action="/Contacts/list/clear" method="post">
+    <br>
+    <button type="submit" name="button">Clear All Contacts</button>
+  </form>
 
 </div>
